@@ -1,0 +1,224 @@
+:root {
+    --bg-color: #FFF67E;
+    --primary: #BFEA7C;
+    --secondary: #9BCF53;
+    --third: #416D19;
+}
+
+* {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border-top: 18px dotted var(--bg-color);
+    background-color: var(--secondary);
+}
+
+.navbar p {
+    color: var(--primary);
+    font-size: 1.5rem;
+    padding: .5rem;
+    transition: .2s ease;
+}
+
+.navbar p:hover {
+    color: var(--bg-color);
+    text-shadow: 0px 0px 1px var(--third), 0px 1px 2px var(--third), 0px 2px 1px var(--third),0px 3px 1px var(--third),0px 4px 7px var(--third);
+    border-radius: .5rem;
+    transform: scale(1.5);
+}
+
+.home {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home img{
+    display:flex;
+    width: 650px;
+    overflow: hidden;
+    margin-left: -4rem;
+    opacity: .7;
+    margin-top: 4rem;
+    margin-right: 5rem;
+    border-radius: 5rem;
+}
+
+.descHom{
+    max-width: 15rem;
+}
+
+.descHom h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:var(--third);
+    text-align: center;
+    font-weight: bold;
+}
+
+.descHom p{
+    border-radius: .4rem;
+    border-top: 2px solid var(--third);
+    border-bottom: 2px solid var(--third);
+    padding: .9rem 0rem;
+    text-align: center;
+    color: var(--third);
+    font-weight: lighter;
+}
+
+.menuPages h1{
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    padding: 1rem;
+    color: var(--third);
+    font-weight: bold;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: auto auto ;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: .6rem;
+}
+
+.menu h1{
+    font-size: 1rem;
+    font-weight: 900;
+
+}
+
+.menu .card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    padding: .5rem;
+    text-align: center;
+    width: 20rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.menu .card img{
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.menu .card p {
+    text-align: center;
+    max-width: 10rem;
+    padding: 1rem;
+    color: var(--third);
+}
+
+.menu .card button {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    color: var(--third);
+    background: var(--secondary);
+    margin-bottom: .7rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+}
+
+.detailsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.detailsPage h1{
+    text-align: center;
+    padding: 1rem;
+    color: var(--third);
+
+}
+
+.detailsPage .menuDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.detailsPage .menuDetails h2,h3, p{
+    color: var(--third);
+    padding: 1rem;
+
+}
+
+.detailsPage .menuDetails h3{
+    background-color: var(--primary);
+    margin-top: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.detailsPage .menuDetails img{
+    width: 30rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 50px auto;
+}
+
+.login>form{
+    /* background-color: yellow; */
+    justify-content: center;
+    width: 250px;
+    height: 40px;
+}
+
+.login>input{
+    border-radius: 5px;
+    margin: 10px;
+    font-size:25px ;
+}
+
+.login>button{
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
