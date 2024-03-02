@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
 import '../style.css'
+import Layout from "../components/Layout";
 
 const Home = () => {
     const navigate = useNavigate();
@@ -14,8 +14,7 @@ const Home = () => {
     }
 
     return (
-        <div>
-            <Navbar />
+        <Layout>
             {access_token ? (
                 <button className="btn" onClick={logout}>Logout</button>
             ) : (
@@ -32,7 +31,7 @@ const Home = () => {
                 </div>
             </div>
 
-        </div>
+        </Layout>
     )
 }
 
